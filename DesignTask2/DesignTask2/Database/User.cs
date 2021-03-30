@@ -6,6 +6,7 @@ namespace DesignTask2.Database
     {
         [PrimaryKey,AutoIncrement]
         public int Id { get; set; }
+        [unique]
         public string userName { get; set; }
         public string name { get; set; }
         [MaxLength(12)]
